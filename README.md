@@ -22,6 +22,6 @@
 </p>
 
 ### 手機版
-<p align="center" width="300">
+<p align="center">
   <img src="./hw3/mobile-example.png">
 </p>
