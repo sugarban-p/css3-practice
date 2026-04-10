@@ -8,7 +8,7 @@
 
 body {
   background-image: url(../images/bg.jpg);
-  background-size: contain;
+  background-size: 1920px 100%;
   background-position: center;
 }
 
@@ -94,28 +94,4 @@ main {
 .desc {
   font-size: 22px;
   font-family: "Jost";
-}
-
-/* 平板 */
-@media screen and (max-width: 1024px) {
-}
-
-/* 手機 */
-@media screen and (max-width: 468px) {
-  body {
-    background-image: none;
-  }
-
-  main {
-    margin-top: 90px;
-  }
-
-  .col-4 > * {
-    padding-bottom: 40px;
-  }
-
-  .col-4 {
-    width: 100%;
-    align-items: center;
-  }
 }

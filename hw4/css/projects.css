@@ -1,7 +1,86 @@
 
 
 
-#projects img {
-  width: 100px;
+
+#projects .container {
+  flex-direction: column;
+  justify-content: center;
+}
+
+#projects .texts {
+  padding: 0 auto;
+  margin-bottom: 93px;
+}
+
+#projects .texts * {
+  text-align: center;
+}
+
+#projects .texts h2 {
+  line-height: 1.5em;
+}
+
+#projects .demos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+#projects .demo {
+  width: 45%;
+  margin: 20px 0;
+}
+
+#projects .demo > * {
+  width: 100%;
+}
+
+#projects .demo img {
+  display: block;
+}
+
+#projects .demo:nth-of-type(1) img {
+  border-radius: 0 80px 0 0;
+}
+#projects .demo:nth-of-type(2) img {
+  border-radius: 80px 0 0 0;
+}
+#projects .demo:nth-of-type(3) img {
+  border-radius: 0 0 80px 0;
+}
+#projects .demo:nth-of-type(4) img {
+  border-radius: 0 0 0 80px;
+}
+
+#projects .link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+
+#projects .desc * {
+  text-align: left;
+}
+
+#projects h5 {
+  letter-spacing: 1.5px;
+}
+
+#projects .icon {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: var(--bg-brown);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#projects .icon i {
+  font-size: 26px;
 }
 
