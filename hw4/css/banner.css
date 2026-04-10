@@ -1,0 +1,27 @@
+
+#banner {
+  background-image: url(../images/banner-pc.jpg);
+  width: 100%;
+  height: calc(100vw * 1080 / 1920);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 0 200px;
+}
+
+/* 平板 */
+@media screen and (max-width: 1024px) {
+  #banner {
+    border-radius: 0 0 0 20%;
+  }
+}
+
+
+/* 手機 */
+@media screen and (max-width: 480px) {
+  #banner {
+    background-image: url(../images/phone/banner-mobile.jpg);
+    height: calc(100vw * 524 / 468);
+    border-radius: 0 0 0 150px;
+  }
+}

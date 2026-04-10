@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Jost";
+  font-size: 18px;
+}
+
+body {
+  background-image: url(../images/bg.jpg);
+  background-size: contain;
+  background-position: center;
+}
+
+:root {
+  --mobile-nav-bg: rgba(223, 223, 223, 0.8);
+  --font-gold: #cda274;
+  --bg-brown: #f4f0ec;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display";
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 35px;
+}
+h4 {
+  font-size: 25px;
+}
+h5 {
+  font-size: 22px;
+  font-weight: normal;
+}
+h6 {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  font-size: 22px;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 100px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  max-width: 1200px;
+  display: flex;
+}
+
+.col-4 {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.desc {
+  font-size: 22px;
+  font-family: "Jost";
+}
+
+/* 平板 */
+@media screen and (max-width: 1024px) {
+}
+
+/* 手機 */
+@media screen and (max-width: 468px) {
+  body {
+    background-image: none;
+  }
+
+  main {
+    margin-top: 90px;
+  }
+
+  .col-4 > * {
+    padding-bottom: 40px;
+  }
+
+  .col-4 {
+    width: 100%;
+    align-items: center;
+  }
+}

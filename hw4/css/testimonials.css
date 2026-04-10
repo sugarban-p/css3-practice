@@ -1,0 +1,47 @@
+
+#testimonials .container {
+  display: block;
+  background-color: #f4f0ec;
+  border-radius: 70px;
+  padding: 90px 25px;
+}
+
+#testimonials h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#testimonials .comments {
+  display: flex;
+  justify-content: space-between;
+}
+
+#testimonials .comment {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 53px 37px;
+  border-radius: 30px;
+}
+
+#testimonials .user {
+  display: flex;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.user img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+
+.comment p {
+  text-align: justify;
+}
