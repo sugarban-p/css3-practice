@@ -25,3 +25,11 @@
 <p align="center">
   <img src="./hw3/mobile-example.png">
 </p>
+
+<br>
+
+## 4. 使用flex完成以下排版(電腦版)
+
+<p align="center">
+  <img src="./hw4/hw4-example.png">
+</p>
