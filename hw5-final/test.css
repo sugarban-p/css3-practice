@@ -1,0 +1,58 @@
+
+      #about .img {
+        width: 50%;
+        height: 400px;
+        border-radius: var(--nav-border-rad);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .desc {
+        width: 45%;
+        align-content: center;
+        text-align: justify;
+      }
+
+      #skills {
+        background-color: var(--web-color);
+        box-shadow: 0 2px var(--shadow-dis) var(--shadow-color),  0 -2px var(--shadow-dis) var(--shadow-color);
+      }
+
+      .skill {
+        width: 30%;
+        height: 200px;
+        background-color: var(--nav-bg);
+        text-align: center;
+        align-content: center;
+        border-radius: var(--nav-border-rad);
+      }
+
+      #projects .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .photo {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .photo:nth-child(2n+1) {
+        flex-direction: row-reverse;
+      }
+
+      .photo * {
+        width: 50%;
+      }
+      .photo .img {
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: var(--nav-border-rad);
+      }
+      .photo .info {
+        padding: 0 20px;
+      }
