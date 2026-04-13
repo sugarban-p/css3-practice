@@ -1,18 +1,5 @@
 
-      #about .img {
-        width: 50%;
-        height: 400px;
-        border-radius: var(--nav-border-rad);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-      }
 
-      .desc {
-        width: 45%;
-        align-content: center;
-        text-align: justify;
-      }
 
       #skills {
         background-color: var(--web-color);
