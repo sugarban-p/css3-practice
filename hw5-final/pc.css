@@ -31,7 +31,7 @@
   --option-bg: rgb(59, 59, 59);
   --nav-border-rad: 10px;
   --section-margin: 20px;
-  --section-shadow-color: rgb(90, 30, 87);
+  --section-shadow-color: rgb(121, 64, 118);
   --section-shadow-dis: 6px;
 }
 /* 1.2 HTML元素 */
@@ -44,20 +44,11 @@ body {
   font-family: "Mukta";
 }
 main {
-  margin-top: calc(var(--header-height) + var(--section-margin));
+  margin-top: var(--header-height);
+  padding: var(--section-margin) 0;
 }
 section {
   margin: var(--section-margin) 0;
-}
-footer {
-  background-color: var(--header-bg);
-}
-footer p {
-  padding: 10px;
-  text-align: center;
-  letter-spacing: 1px;
-  font-weight: bold;
-  color: var(--option-bg);
 }
 li {
   list-style: none;
@@ -68,7 +59,7 @@ a {
 }
 /* 1.3 class */
 .container {
-  width: 1200px;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -168,7 +159,7 @@ h1 {
   /* background-color: #fff; */
   padding: 20px;
   margin-top: 30px;
-  width: 45%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -200,7 +191,8 @@ h1 {
 }
 /* 4.2.3 技能 */
 .skill {
-  width: 70%;
+  width: 80%;
+  max-width: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -245,20 +237,37 @@ h1 {
   box-shadow: 1px 0 2px rgb(150, 150, 150);
   animation: grow 1s ease-in-out;
 }
-.html {
-  width: 90%;
+.html,
+.javascript,
+.mysql,
+.python,
+.csharp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: fit-content;
 }
-.css {
+.skill .fill {
+  width: 100%;
+  text-align: center;
+  color: white;
+  box-shadow: 1px 0 2px rgb(150, 150, 150);
+  animation: grow 1s ease-in-out;
+}
+.html {
   width: 95%;
 }
 .javascript {
-  width: 80%;
-}
-.php {
-  width: 60%;
+  width: 85%;
 }
 .mysql {
   width: 80%;
+}
+.python {
+  width: 85%;
+}
+.csharp {
+  width: 60%;
 }
 @keyframes grow {
   0% {
@@ -278,17 +287,6 @@ h1 {
     #31c840
   );
 }
-.css .fill {
-  background-image: linear-gradient(
-    to right,
-    #ec9696,
-    #e97e7c,
-    #e46562,
-    #dc4b47,
-    #d32b2b
-  );
-  animation-delay: 0.1s;
-}
 .javascript .fill {
   background-image: linear-gradient(
     to right,
@@ -300,17 +298,6 @@ h1 {
   );
   animation-delay: 0.2s;
 }
-.php .fill {
-  background-image: linear-gradient(
-    to right,
-    #fdcd70,
-    #fcc45c,
-    #fabb47,
-    #f9b230,
-    #f8a80d
-  );
-  animation-delay: 0.3s;
-}
 .mysql .fill {
   background-image: linear-gradient(
     to right,
@@ -321,6 +308,28 @@ h1 {
     #be53f0
   );
   animation-delay: 0.4s;
+}
+.python .fill {
+  background-image: linear-gradient(
+    to right,
+    #ec9696,
+    #e97e7c,
+    #e46562,
+    #dc4b47,
+    #d32b2b
+  );
+  animation-delay: 0.1s;
+}
+.csharp .fill {
+  background-image: linear-gradient(
+    to right,
+    #fdcd70,
+    #fcc45c,
+    #fabb47,
+    #f9b230,
+    #f8a80d
+  );
+  animation-delay: 0.3s;
 }
 /* 5 - Experience */
 #exp .container {
@@ -335,24 +344,57 @@ h1 {
   padding-left: 20px;
 }
 .event {
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--logo-shadow-color);
   padding: 10px 0;;
   height: 100px;
+  display: flex;
+  justify-content: space-evenly;
 }
 .event > * {
-  margin: 0 20px;
   font-weight: normal;
   color: black;
 }
+.event .period {
+  display: block;
+  width: 80px;
+  font-weight: bold;
+  text-align: center;
+}
 .event .img {
-  width: 120px;
   height: 100%;
+  aspect-ratio: 4/3;
   overflow: hidden;
 }
 .event img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.event .name {
+  width: 205px;
+  padding: 0 10px;
+}
+.event .title {
+  width: 500px;
+}
+
+
+
+
+/* Footer */
+footer {
+  margin-top: var(--section-margin);
+  background-color: var(--header-bg);
+  width: 100%;
+}
+footer p {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: var(--option-bg);
 }
