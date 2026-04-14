@@ -16,6 +16,7 @@
     4.2.1 自我介紹
     4.2.2 學歷
     4.2.3 技能
+5 - Experience
 */
 
 /* === 1 - GLOBAL === */
@@ -155,6 +156,9 @@ header .container {
 }
 #about img {
   width: 100%;
+}
+#about .img:hover {
+  transform: scale(1.01);
 }
 h1 {
   text-align: center;
@@ -317,4 +321,38 @@ h1 {
     #be53f0
   );
   animation-delay: 0.4s;
+}
+/* 5 - Experience */
+#exp .container {
+  background-color: #e1cfe5;
+  box-shadow: 20px 20px 0px var(--section-shadow-color);
+  border: 1px solid var(--logo-shadow-color);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#exp h3 {
+  padding-left: 20px;
+}
+.event {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--logo-shadow-color);
+  padding: 10px 0;;
+  height: 100px;
+}
+.event > * {
+  margin: 0 20px;
+  font-weight: normal;
+  color: black;
+}
+.event .img {
+  width: 120px;
+  height: 100%;
+  overflow: hidden;
+}
+.event img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
