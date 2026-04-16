@@ -9,46 +9,65 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/pc.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/phone.css" />
-    <link rel="stylesheet" href="./css/tablet.css">
     <title>RWD主導覽練習檔</title>
-    <style></style>
   </head>
 
   <body>
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
     <header>
       <div class="container">
         <img class="logo" src="./imgs/logo.png" alt="" />
         <div class="menu-icon">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" id="toggleMenu"></i>
         </div>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
           <ul>
-            <a href="#about"><li>關於我</li></a>
-            <a href="#exp"><li>活動經歷</li></a>
-            <a href="#stories"><li>作品集</li></a>
-            <a href="#contact"><li>聯絡我</li></a>
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#exp">活動經歷</a></li>
+            <li><a href="#stories">作品集</a></li>
+            <li><a href="#contact">聯絡我</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <!-- <section id="banner"></section> -->
+      <section id="banner" class="covered">
+        <h1>發揮無限創意▕&emsp;為您做出好設計</h1>
+      </section>
 
       <section id="about">
         <div class="container">
-          <div class="title">
+          <div class="title covered">
             <div class="img">
               <img class="blur" src="./imgs/about.png" alt="" />
             </div>
             <h2>關於我</h2>
           </div>
-          <div class="desc">
+          <div class="desc covered">
             <div class="self-intro">
-              <h3>在不同領域間交織技能樹</h3>
+              <h3>在不同領域間交織技能樹的工程師</h3>
               <h4>
-                嗨，我是無糖，目前正在轉型成為前端/全端工程師。<br />
+                嗨，我是無糖，正在轉型成為前端/全端工程師的路上。<br />
+                我在研究所期間從零開始接觸MATLAB、Python等程式，自行建置異常偵測模型以完成碩士學位；畢業後，我在國震中心負責建置及維護資料庫，並協助智慧監測相關平台與網頁開發。<br>
+                從大學到就業，我意識到許多工程任務本質上都是資料流、視覺化和系統整合的問題。
+                這也是我決定轉向網頁開發的原因—透過研究期間所累積的縝密邏輯與數據分析能力，使網頁不僅只是成為工具和平台，更要能讓使用者。<br />
+                我目前除了接觸Tailwind
+                CSS、React、Vue.js、Node.js等前後端框架，同時也在加強git、Figma等開發相關工具的熟練度。<br />
+                在這裡，我將持續更新學習進度和相關作品，並記錄自身的成長歷程。
 
                 <!-- 我在研究所期間從零開始接觸MATLAB、Python等程式，自行建置異常偵測模型以完成碩士學位；畢業後，我在半年內自學HTML、CSS、MySQL等技術，並結合flask套件
                 <br>
@@ -131,7 +150,7 @@
       </section>
 
       <section id="exp">
-        <div class="container">
+        <div class="container covered">
           <h2>活動經驗</h2>
           <div class="event">
             <h4 class="period">2025 / 03</h4>
@@ -163,78 +182,94 @@
       </section>
 
       <section id="stories">
-        <div class="container">
+        <div class="container covered">
           <h2>作品集</h2>
           <div class="grid">
             <div class="grid-item1">
               <div class="back">
-                <a href="https://codepen.io/editor/sugarban-p/pen/019d91c4-575b-724e-ab71-a8ffbc2b95da">
-                  <h5>Vertical Navbar - CSS Animation Implementation</h5>
+                <a
+                  href="https://codepen.io/editor/sugarban-p/pen/019d91c4-575b-724e-ab71-a8ffbc2b95da"
+                >
+                  <h5>Vertical navbar - CSS Animation Implementation</h5>
                 </a>
               </div>
               <img src="./imgs/navbar-ani.gif" alt="" class="front" />
             </div>
             <div class="grid-item2">
               <div class="back">
-                <a href="https://codepen.io/editor/sugarban-p/pen/019d9409-73e7-7545-b45c-a7daa558806d">
+                <a
+                  href="https://codepen.io/editor/sugarban-p/pen/019d9409-73e7-7545-b45c-a7daa558806d"
+                >
                   <h5>Login Window - CSS Implementation</h5>
                 </a>
               </div>
               <img src="./imgs/login-win.jpg" alt="" class="front" />
             </div>
-            <div class="grid-item3">
+            <div class="grid-item3" type="empty">
               <div class="back">
-                <a href="https://codepen.io/editor/sugarban-p/pen/019d91c4-575b-724e-ab71-a8ffbc2b95da">
-                  <h5>Vertical Navbar - CSS Animation Implementation</h5>
+                <a
+                  href="" onclick="return false;"
+                >
+                  <h5></h5>
                 </a>
               </div>
-              <img src="./imgs/navbar-ani.gif" alt="" class="front" />
+              <img src="./imgs/empty.jpg" alt="" class="front" />
             </div>
             <div class="grid-item4">
               <div class="back">
-                <a href="https://codepen.io/editor/sugarban-p/pen/019d91c4-575b-724e-ab71-a8ffbc2b95da">
-                  <h5>Vertical Navbar - CSS Animation Implementation</h5>
+                <a
+                  href="" onclick="return false;"
+                >
+                  <h5>JavaScript 功能開發練習</h5>
                 </a>
               </div>
-              <img src="./imgs/navbar-ani.gif" alt="" class="front" />
+              <img src="./imgs/jsproject.gif" alt="" class="front" />
             </div>
-            <div class="grid-item5">
+            <div class="grid-item5" type="empty">
               <div class="back">
-                <a href="https://codepen.io/editor/sugarban-p/pen/019d91c4-575b-724e-ab71-a8ffbc2b95da">
-                  <h5>Vertical Navbar - CSS Animation Implementation</h5>
+                <a
+                  href="" onclick="return false;"
+                >
+                  <h5></h5>
                 </a>
               </div>
-              <img src="./imgs/navbar-ani.gif" alt="" class="front" />
+              <img src="./imgs/empty.jpg" alt="" class="front" />
             </div>
-            <div class="grid-item6">
+            <div class="grid-item6" type="empty">
               <div class="back">
-                <a href="https://codepen.io/editor/sugarban-p/pen/019d91c4-575b-724e-ab71-a8ffbc2b95da">
-                  <h5>Vertical Navbar - CSS Animation Implementation</h5>
+                <a
+                  href="" onclick="return false;"
+                >
+                  <h5></h5>
                 </a>
               </div>
-              <img src="./imgs/navbar-ani.gif" alt="" class="front" />
+              <img src="./imgs/empty.jpg" alt="" class="front" />
             </div>
-            <div class="grid-item7">
+            <div class="grid-item7" type="empty">
               <div class="back">
-                <a href="https://codepen.io/editor/sugarban-p/pen/019d91c4-575b-724e-ab71-a8ffbc2b95da">
-                  <h5>Vertical Navbar - CSS Animation Implementation</h5>
+                <a
+                  href="" onclick="return false;"
+                >
+                  <h5></h5>
                 </a>
               </div>
-              <img src="./imgs/navbar-ani.gif" alt="" class="front" />
+              <img src="./imgs/empty.jpg" alt="" class="front" />
             </div>
             <div class="grid-item8">
               <div class="back">
-                <a href="https://codepen.io/editor/sugarban-p/pen/019d91c4-575b-724e-ab71-a8ffbc2b95da">
-                  <h5>Vertical Navbar - CSS Animation Implementation</h5>
+                <a
+                  href="https://github.com/sugarban-p/html-practice"
+                >
+                  <h5>靜態網頁練習 - Github</h5>
                 </a>
               </div>
-              <img src="./imgs/navbar-ani.gif" alt="" class="front" />
+              <img src="./imgs/static.jpg" alt="" class="front" />
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact">
+      <section id="contact" class="covered">
         <div>
           <div class="container">
             <div class="desc">
@@ -283,8 +318,49 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="covered">
       <p class="copy-right">Copyright &copy; 2026 sugarban.com</p>
     </footer>
+
+    <script>
+      const toggleMenu = document.getElementById("toggleMenu");
+      const navbar = document.getElementById("navbar");
+
+      function showNavbar() {
+        navbar.classList.toggle("show");
+        return;
+      }
+      function hideNavbar() {
+        navbar.classList.remove("show");
+        return;
+      }
+
+      function checkMenuState() {
+        if (window.innerWidth >= 768) {
+          hideNavbar();
+        }
+      }
+
+      window.addEventListener("resize", checkMenuState);
+      checkMenuState();
+
+      toggleMenu.addEventListener("click", showNavbar);
+
+      navbar.addEventListener("click", function (e) {
+        // 判斷是否點到 li 或 a
+        if (e.target.closest("li")) {
+          hideNavbar();
+        }
+      });
+
+      document.addEventListener("click", (e) => {
+        const clickedLi = navbar.contains(e.target);
+        const clickedToggleMenu = toggleMenu.contains(e.target);
+
+        if (!clickedLi && !clickedToggleMenu) {
+          hideNavbar();
+        }
+      });
+    </script>
   </body>
 </html>

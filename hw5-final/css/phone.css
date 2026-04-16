@@ -14,10 +14,23 @@
     display: flex;
   }
   /* 2.2 navbar 選單 */
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.759);
+    display: none;
+  }
+  .show {
+    display: block;
+  }
   .navbar,
   .navbar * {
     width: 100%;
-    display: none;
+    max-width: none;
+  }
+  .navbar li {
+    margin-top: 5px;
+  }
+  .navbar li:hover {
+    background-color: var(--header-bg);
   }
 
   /* 3 - Banner */
@@ -49,6 +62,6 @@
   /* 7 - Contact */
   /* 7.1 聯絡資訊 */
   /* 7.2 聯絡表單 */
-  
+
   /* 8 - Footer */
 }
