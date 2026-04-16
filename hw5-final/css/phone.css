@@ -34,6 +34,9 @@
   }
 
   /* 3 - Banner */
+  h1 {
+    font-size: 32px;
+  }
 
   /* 4 - About */
   #about .container {
