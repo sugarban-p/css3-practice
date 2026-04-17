@@ -479,6 +479,9 @@ h1 {
   display: flex;
   justify-content: space-evenly;
 }
+.event:hover {
+  background-color: var(--header-bg);
+}
 .event > * {
   font-weight: normal;
   color: black;
@@ -616,6 +619,7 @@ h1 {
 }
 #contact .info {
   padding: 10px 0;
+  cursor: default;
 }
 #contact .info > * {
   display: flex;
