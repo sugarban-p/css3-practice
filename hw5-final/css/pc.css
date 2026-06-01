@@ -27,6 +27,11 @@
 /* === 1 - GLOBAL === */
 * {
   box-sizing: border-box;
+  cursor: default;
+}
+*::selection {
+  background-color: #00000000;
+  color: inherit;
 }
 /* 1.1 自訂變數 */
 :root {
@@ -60,6 +65,21 @@ body {
 section {
   padding-top: calc(var(--header-height) + var(--section-padding));
 }
+h1,
+h3,
+h4,
+h5,
+h6 {
+  cursor: text;
+}
+h1::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+  background-color: var(--section-shadow-color);
+  color: white;
+}
 h2 {
   font-size: 30px;
   text-align: center;
@@ -71,6 +91,10 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+}
+a,
+a * {
+  cursor: pointer;
 }
 button {
   cursor: pointer;
@@ -301,6 +325,9 @@ h1 {
 .self-intro h3:first-child {
   font-size: 22px;
 }
+.self-intro h4 {
+  text-align: justify;
+}
 .desc h4 {
   font-weight: normal;
   color: black;
@@ -394,7 +421,7 @@ h1 {
   width: 80%;
 }
 .python {
-  width: 85%;
+  width: 75%;
 }
 .csharp {
   width: 60%;
