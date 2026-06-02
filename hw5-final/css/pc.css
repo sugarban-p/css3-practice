@@ -79,15 +79,21 @@ h3::selection,
 h4::selection,
 h5::selection,
 h6::selection,
-strong::selection,
 em::selection {
   background-color: var(--section-shadow-color);
   color: white;
+}
+strong::selection {
+  background-color: var(--section-shadow-color);
+  color: rgb(240, 182, 58);
 }
 h2 {
   font-size: 30px;
   text-align: center;
   text-shadow: 2px 2px 2px #c0c0c0;
+}
+strong {
+  color: #bd4b0a;
 }
 li {
   list-style: none;
